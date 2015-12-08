@@ -2,11 +2,11 @@
   "name": "lure",
   "version": "0.0.1",
   "description": "Ludens CLI tools.",
-  "main": "bin/lure.js",
+  "main": "bin/program.js",
   "preferGlobal": true,
   "scripts": {
     "test": "jasmine",
-    "compile": "babel --presets es2015 src/lure.js --out-file bin/lure.js",
+    "compile": "babel --presets es2015 src/program.js --out-file bin/program.js && babel --presets es2015 src/tasks/ --out-dir lib/tasks",
     "prepublish": "npm run compile"
   },
   "bin": {
