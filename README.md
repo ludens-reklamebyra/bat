@@ -1,14 +1,14 @@
-# lure
+# bat
 Ludens CLI tools. PLZ CNTRBTUE :squirrel:
 
 ## Install
 ```
-$ git clone git@github.com:ludens-reklamebyra/lure.git && cd lure
+$ git clone https://github.com/ludens-reklamebyra/bat.git && cd bat
 $ npm install
 $ npm link
 ```
 
 ## Usage
 ```
-$ lure new
+$ bat new
 ```

@@ -1,5 +1,5 @@
 {
-  "name": "lure",
+  "name": "bat",
   "version": "0.0.1",
   "description": "Ludens CLI tools.",
   "main": "bin/program.js",
@@ -10,11 +10,11 @@
     "prepublish": "npm run compile"
   },
   "bin": {
-    "lure": "./bin/program.js"
+    "bat": "./bin/program.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ludens-reklamebyra/lure.git"
+    "url": "git+https://github.com/ludens-reklamebyra/bat.git"
   },
   "keywords": [
     "ludens",
@@ -24,9 +24,9 @@
   "author": "Stian Bakkane <stianba@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ludens-reklamebyra/lure/issues"
+    "url": "https://github.com/ludens-reklamebyra/bat/issues"
   },
-  "homepage": "https://github.com/ludens-reklamebyra/lure#readme",
+  "homepage": "https://github.com/ludens-reklamebyra/bat#readme",
   "dependencies": {
     "commander": "^2.9.0",
     "inquirer": "^0.11.0"
