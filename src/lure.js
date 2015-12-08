@@ -1,9 +1,9 @@
-import lure from 'commander';
+import program from 'commander';
 import inquirer from 'inquirer';
 
-lure.version('0.0.1');
+program.version('0.0.1');
 
-lure.command('new')
+program.command('new')
   .description('bootstrap a new project')
   .action(() => {
     const questions = [
@@ -29,4 +29,4 @@ lure.command('new')
     });
   });
 
-lure.parse(process.argv);
+program.parse(process.argv);
