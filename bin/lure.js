@@ -16,7 +16,11 @@ _commander2.default.command('new').description('bootstrap a new project').action
   var questions = [{
     type: "input",
     name: "name",
-    message: "Project name:"
+    message: "Project name:",
+    validate: function validate(value) {
+      if (value.length > 0) return true;
+      return 'You need a project name';
+    }
   }, {
     type: 'list',
     name: 'type',

@@ -11,6 +11,10 @@ lure.command('new')
         type: "input",
         name: "name",
         message: "Project name:",
+        validate: value => {
+          if (value.length > 0) return true;
+          return `You need a project name`;
+        }
       },
       {
         type: 'list',
