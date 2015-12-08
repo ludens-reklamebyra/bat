@@ -13,27 +13,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _commander2.default.version('0.0.1');
 
 _commander2.default.command('new').description('bootstrap a new project').action(function () {
-  var projectType = undefined;
-  var projectName = undefined;
-  var projectTypes = [{
+  var questions = [{
+    type: "input",
+    name: "name",
+    message: "Project name:"
+  }, {
     type: 'list',
-    name: 'projectType',
+    name: 'type',
     message: 'What kind of project?',
     choices: ['Wordpress', 'Express']
   }];
 
-  _inquirer2.default.prompt({
-    type: "input",
-    name: "name",
-    message: "Project name:"
-  }, function (answer) {
-    projectName = answer.name;
-
-    _inquirer2.default.prompt(projectTypes, function (answer) {
-      projectType = answer.projectType;
-
-      console.log('Hello ' + projectName + ' of type ' + projectType + ' 🍻');
-    });
+  _inquirer2.default.prompt(questions, function (answers) {
+    console.log(JSON.stringify(answers));
   });
 });
 
