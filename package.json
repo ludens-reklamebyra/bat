@@ -10,7 +10,7 @@
     "prepublish": "npm run compile"
   },
   "bin": {
-    "lure": "bin/lure.js"
+    "lure": "./bin/program.js"
   },
   "repository": {
     "type": "git",
