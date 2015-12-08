@@ -1,0 +1,38 @@
+{
+  "name": "lure",
+  "version": "0.0.1",
+  "description": "Ludens CLI tools.",
+  "main": "bin/lure.js",
+  "preferGlobal": true,
+  "scripts": {
+    "test": "jasmine",
+    "compile": "babel --presets es2015 src/lure.js --out-file bin/lure.js",
+    "prepublish": "npm run compile"
+  },
+  "bin": {
+    "lure": "bin/lure.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludens-reklamebyra/lure.git"
+  },
+  "keywords": [
+    "ludens",
+    "cli",
+    "npm"
+  ],
+  "author": "Stian Bakkane <stianba@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ludens-reklamebyra/lure/issues"
+  },
+  "homepage": "https://github.com/ludens-reklamebyra/lure#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "inquirer": "^0.11.0"
+  },
+  "devDependencies": {
+    "babel-plugin-syntax-flow": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13"
+  }
+}
